@@ -1,0 +1,26 @@
+<head>
+  <title>Hue</title>
+</head>
+
+<body>
+<div class="ui segment">
+  {{> main}}
+</div>
+</body>
+
+<template name="main">
+<div class="ui list">
+{{#each lights}}
+{{> light}}
+{{/each}}
+</div>
+</template>
+
+<template name="light">
+<div class="item">
+<div class="ui toggle checkbox">
+  <input type="checkbox">
+  <label>{{name}}</label>
+</div>
+</div>
+</template>

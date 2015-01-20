@@ -1,0 +1,355 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"crea",
+				"createPlayer(div, trackId, ytId)"
+			],
+			[
+				"cre",
+				"createPlayer(div, trackId, ytId)"
+			],
+			[
+				"wd",
+				"width"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"pl",
+				"player	(?)"
+			],
+			[
+				"desto",
+				"destroypl(pl)"
+			],
+			[
+				"back",
+				"backupPlayer	(?)"
+			],
+			[
+				"dest",
+				"destroyPlayer()"
+			],
+			[
+				"bac",
+				"backup"
+			],
+			[
+				"wait",
+				"waitingForBackupPlayer"
+			],
+			[
+				"tra",
+				"trackId	(?)"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"waiting",
+				"waitingForPlayerReady"
+			],
+			[
+				"player",
+				"playerState"
+			],
+			[
+				"play",
+				"playerState"
+			],
+			[
+				"backup",
+				"backupPlayer	(?)"
+			],
+			[
+				"sub",
+				"subscribe"
+			],
+			[
+				"sea",
+				"searchDoneButton"
+			],
+			[
+				"ren",
+				"render"
+			],
+			[
+				"cl",
+				"client"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"paddi",
+				"padding-right"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"table",
+				"table-cell"
+			],
+			[
+				"ta",
+				"table-row"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"in",
+				"input"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 588.0,
+		"selected_items":
+		[
+			[
+				"au",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"auto",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"tag",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"jshin",
+				"JSHint: Clear Annotations"
+			],
+			[
+				"packag",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ternj",
+				"TernJS: Reload"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 768.0
+	},
+	"console":
+	{
+		"height": 186.0,
+		"history":
+		[
+			"npm",
+			"where nodejs.exe",
+			"where nodejs",
+			"where node",
+			"where linter",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Arseney/vagrant/Jukebox/Client/player.js",
+		"/C/Users/Arseney/vagrant/Jukebox/Client/Client.html.bak",
+		"/C/Users/Arseney/vagrant/Jukebox/Client/client.js",
+		"/C/Users/Arseney/vagrant/Jukebox/Jukebox.html",
+		"/C/Users/Arseney/vagrant/Jukebox/client/Client.htm",
+		"/C/Users/Arseney/OneDrive/software/sublime 3/Data/Packages/JSHint Gutter/.jshintrc",
+		"/C/Users/Arseney/vagrant/Jukebox/Jukebox.sublime-project",
+		"/C/Users/Arseney/vagrant/Jukebox/Jukebox.js",
+		"/C/Users/Arseney/OneDrive/software/sublime 3/Data/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 50.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"destroypl",
+			".trackId",
+			").",
+			"div",
+			"yt",
+			" {",
+			">\n",
+			"basic",
+			"Session",
+			"\n  ",
+			"Session",
+			"if",
+			"kflkfd",
+			"dfldmf",
+			"kflkfd",
+			"dfldmf",
+			"lkfd\ndfld",
+			"dfldmf",
+			"dsaf"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"destroyPlaylist",
+			".sourceId"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Hue.sublime-project",
+	"replace":
+	{
+		"height": 94.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 300.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

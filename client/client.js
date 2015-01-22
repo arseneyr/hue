@@ -1,8 +1,43 @@
 Template.main.helpers({
-	lights: function() {
-		return Lights.find();
+	groups: function() {
+		return Groups.find({});
 	}
 });
+
+Template.main.rendered = function () {
+	this.$('.ui.accordion').accordion();
+}
+
+Template.group.helpers({
+	lights: function() {
+		return Lights.find({_id: {$in: this.lights}});
+	}
+})
+
+/*Template.group.rendered = function() {
+	var that = this;
+	var checkbox = this.$('.title > .ui.checkbox');
+	checkbox.checkbox({
+		fireOnInit: false,
+		onChecked: function () {
+			Groups.update(that.data._id, {$set: {'action.on': true}});
+		},
+		onUnchecked: function () {
+			Groups.update(that.data._id, {$set: {'action.on': false}});
+		}
+	})	
+}*/
+
+Template.group.rendered = function() {
+	this.$('.title > .ui.checkbox').checkbox();
+}
+
+Template.group.events({
+	'change .title > .ui.checkbox': function (event) {
+		event.stopImmediatePropagation();
+		event.preventDefault();
+	}
+})
 
 Template.light.rendered = function() {
 	var that = this;

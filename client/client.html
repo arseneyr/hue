@@ -9,10 +9,27 @@
 </body>
 
 <template name="main">
+<div class="ui styled accordion"> 
+{{#each groups}}
+{{> group}}
+{{/each}}
+</div>
+</template>
+
+<template name="group">
+<div class="title">
+	<i class="dropdown icon"></i>
+	<div class="ui toggle checkbox">
+	<input type="checkbox" name="public">
+	</div>
+	{{name}}
+</div>
+<div class="content"> 
 <div class="ui list">
 {{#each lights}}
 {{> light}}
 {{/each}}
+</div>
 </div>
 </template>
 

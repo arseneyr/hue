@@ -5,7 +5,7 @@ Template.main.helpers({
 });
 
 Template.main.rendered = function () {
-	this.$('.ui.accordion').accordion();
+	this.$('.ui.accordion').accordion({exclusive: false});
 }
 
 Template.group.helpers({
@@ -14,7 +14,7 @@ Template.group.helpers({
 	}
 })
 
-/*Template.group.rendered = function() {
+Template.group.rendered = function() {
 	var that = this;
 	var checkbox = this.$('.title > .ui.checkbox');
 	checkbox.checkbox({
@@ -26,16 +26,14 @@ Template.group.helpers({
 			Groups.update(that.data._id, {$set: {'action.on': false}});
 		}
 	})	
-}*/
-
-Template.group.rendered = function() {
-	this.$('.title > .ui.checkbox').checkbox();
 }
 
 Template.group.events({
-	'change .title > .ui.checkbox': function (event) {
-		event.stopImmediatePropagation();
-		event.preventDefault();
+	'change .ui.accordion > .title > .ui.checkbox': function (event) {
+		event.stopPropagation();
+	},
+	'click .ui.accordion > .title > .ui.checkbox': function (event) {
+		event.stopPropagation();
 	}
 })
 

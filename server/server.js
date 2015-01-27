@@ -18,9 +18,26 @@ Meteor.startup(function() {
 		Groups.insert(initialGroups[i]);
 	}
 
-	Lights.after.update(function(userId, doc) {
-		if (doc.state.on != this.previous.state.on) {
-			HTTP.put(api_url + '/lights/' + doc._id + '/state', {data: {on: doc.state.on, transitiontime: 0}});
+	Lights.allow({
+		update: function(userId, doc, fieldNames, modifier) {
+			if (_.contains(fieldNames, 'state') && modifier.$set) {
+				var requestData = {},
+					sendRequest = false;
+				_.keys(modifier.$set).forEach(function (v) {
+					var match = /^state\.(.*)/.exec(v);
+					if (match) {
+						console.log(match[1] + ' ' + modifier.$set[v]);
+						requestData[match[1]] = modifier.$set[v];
+						sendRequest = true;
+					}
+				});
+
+				if (sendRequest) {
+					return HTTP.put(api_url + '/lights/' + doc._id + '/state', {data: requestData}).statusCode == 200;
+				}
+			}
+
+			return true;			
 		}
 	});
 
@@ -29,12 +46,12 @@ Meteor.startup(function() {
 	});
 
 	Meteor.setInterval(function() {
-		HTTP.get(api_url + '/lights', function(err, res) {
+		/*HTTP.get(api_url + '/lights', function(err, res) {
 			if (!err) {
 				for (var i in res.data) {
 					Lights.direct.update({_id: i}, res.data[i]);
 				}
 			}
-		});
+		});*/
 	}, 1000);
 });

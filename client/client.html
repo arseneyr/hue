@@ -2,6 +2,17 @@
   <title>Hue</title>
 </head>
 
+<head>
+  <title>Hue</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
+  <script src="jquery.minicolors.js"></script>
+  <link rel="stylesheet" href="jquery.minicolors.css">
+</head>
+
 <body>
 <div class="ui segment">
   {{> main}}
@@ -38,6 +49,6 @@
 <div class="ui toggle checkbox">
   <input type="checkbox">
   <label>{{name}}</label>
-</div>
+</div><input type="hidden" id="hidden-input" class="colorPicker" value="#db913d"> 
 </div>
 </template>
